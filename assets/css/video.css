@@ -26,15 +26,4 @@
   height: 100%;
 }
 
-
-.carousel-control-prev-icon, .carousel-control-next-icon{
-    background-color: #1e90ff;
-}
-.carousel-item active img {
-    height: 100vh;
-}
-
-@media screen and (max-width: 540px) {
-    .carousel-item active img {
-        height: 300px;
     
