@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>FIT 2004 - Thanh Tran</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://dlmocha.com/DL.jpg" />
+	
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172505444-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172505444-1');
+</script>
+<script data-ad-client="ca-pub-8622842234296854" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Nunito:400,600,700" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/flickity/flickity.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/video.css">
+
+</head> 
+
+<body>
+    <header class="header">
+	    
+        <div class="branding">
+            
+            <div class="container position-relative">
+				<nav class="navbar navbar-expand-lg" >
+                    <h1 class="site-logo"><span class="logo-text">Monash - <span class="alt rounded">FIT 2004</span></span></h1>
+				</nav>            
+            </div>          
+        </div>
+    </header>
+    
+    <section>
+	    <div class="container py-lg-5">
+		    <h1 class="mb-5 text-center font-weight-bold">Assignment 3 Grading Disagreement</h1>
+		    <div>Hi TA, this website is belonged to me - Thanh Dat Tran, and I have question with your grading for my assignment 3. The image below shows your comments about my assignment, and I agreed that I did not complete it in the required time complexity. 
+            </div>
+	    </div>
+    </section>
+    
+    
+    <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="youtube-video-container">
+                          <img width="565" height="315" src="https://dlmocha.com/images/TA-feedback.png">
+                    </div>
+                </div>
+            </div>
+    </section><br>
+
+    
+    <section>
+	    <div class="container py-lg-5">
+		    <h3 class="mb-5 text-center font-weight-bold">For the task 1</h3>
+		    <div>I disagree about the grade that I received. It's only 1.25/4.0. I try all the test cases and everything passed excepted the run time but you already took marks out for that. What I was trying to do like this <br><br>
+            Suppose given travel_days = [[-1,-1, 3, 1],  [-1,-1,-1, 1], [ 1,-1,-1, 1], [ 1, 1, 2,-1]], then we observe that from city #0, saleman could spend stay at city #0 or reach to city#2 and city#3 etc...
+            <br>Then I created adjacent list to hold every reachable cities at the specific cities.
+            </div>
+	    </div>
+    </section>
+    <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="youtube-video-container">
+                          <img width="565" height="315" src="https://dlmocha.com/images/task1_1.jpg">
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <section>
+	    <div class="container py-lg-5">
+		    <div>Now supposed we start at city#1 and the given revenue = [[ 1, 2, 3, 4], [ 3, 6, 1, 5], [ 1, 8, 4, 1]]
+            </div>
+	    </div>
+    </section>
+    <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="youtube-video-container">
+                          <img width="565" height="315" src="https://dlmocha.com/images/task1_2.jpg">
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <section>
+	    <div class="container py-lg-5">
+		    <div>I could applied the concept of dynamic programming for this one like a coin change problems. However, the assignment does requested or forced us to use dynamic programming for this. Instead I'm gonna traverse all possbile cases instead of checing in memo if y from adj[x] has been calculate. Instead the problem is the time complexity is with the generatePossibleRevenue() function that I defined in oly O(n + d) run time but it does not that make it cross over the required time. The exact time is likely O(n * 2 ^ (n+d)) I believed. But the problems are still solved just in very slower time and you already took out marks for that. 
+            </div>
+	    </div>
+    </section>
+    
+    <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="youtube-video-container">
+                          <img width="565" height="315" src="https://dlmocha.com/images/generatePossibleRevenue.png">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+	    <div class="container py-lg-5">
+		    <div>I strongly believe that I should get at least half of the maximum grade for this, since I passed all the test cases acutally will pass all the cases but in very slow time, even for the case you given { revenue=[[1,1] for _ in range(100)], travel_days=[[0,1],[1,0]], start=0 } it just took much time. Also you could take out 1 point for the DP recurrence but I should derserved grade for the logic. 
+            </div>
+	    </div>
+    </section>
+    
+    
+    <section>
+	    <div class="container py-lg-5">
+		    <h3 class="mb-5 text-center font-weight-bold">For the task 2</h3>
+		    <div>I wondered why was my DP recurrence is only 1/3. What the acutal 3/3 DP recurrence gonna looks like? I know it's pretty slow.Could you please, revise my assignment, and give me grade for the logic, and the two task actually run for all given test cases, for some of your individual test cases, I believe it runs too, but too time consuming. However, it does running and you already took out my marks for time complexity.
+            </div>
+	    </div>
+    </section>
+    
+    <section>
+	    <div class="container py-lg-5">
+		    <h1 class="mb-5 text-center font-weight-bold">Thank You</h1>
+	    </div>
+    </section>
+    
+    <footer class="footer theme-bg-primary">
+	    <div class="container">
+		    <hr>
+	    </div>
+	    <div class="footer-bottom text-center pb-5">
+            <small class="copyright">Thanh Dat Tran</small><br>
+	    </div>
+		
+    </footer>
+
+       
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="assets/plugins/flickity/flickity.pkgd.min.js"></script> 
+    <script type="text/javascript" src="assets/js/main.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+
+</body>
+</html> 
+
